@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>게시판</title>
+    </head>
+    <body>
+    <form class="form-horizontal" th:action="@{/board/post}" method="post">
+        <div>
+            <input class="form-control" id="게시글제목" name="게시글제목" placeholder="제목"/>
+        </div>
+        <div>
+            <textarea class="form-control" id="게시글내용" name="게시글내용" placeholder="내용"></textarea>
+        </div>
+        <div>
+            <button type="input">저장</button>
+        </div>
+    </form>
+    </body>
+</html>
